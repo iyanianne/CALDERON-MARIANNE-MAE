@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+
+class Student {
+   String f_name;
+   String m_name;
+   String l_name;
+   String suffix;
+   
+   public String getfirstName()
+   {
+     return f_name;
+   }
+   public void setfirstName(String f_name)
+   {
+     this.f_name = f_name;
+   }
+   
+   public String getmiddleName()
+   {
+     return m_name;
+   }
+   public void setmiddleName(String m_name)
+   {
+     this.m_name = m_name;
+   }
+   
+   public String getlastName()
+   {
+     return l_name;
+   }
+   public void setlastName(String l_name)
+   {
+     this.l_name = l_name;
+   }
+   
+   public String getSuffix()
+   {
+     return suffix;
+   }
+   
+   public void setSuffix(String suffix)
+   {
+      this.suffix = suffix;
+   }
+   
+   public static void main (String[] args){
+      Scanner scanner = new Scanner(System.in);
+      Student student = new Student();
+      
+      System.out.print("First Name: ");
+      student.setfirstName(scanner.nextLine());
+     
+      System.out.print("Middle Name: ");
+      student.setmiddleName(scanner.nextLine());
+     
+      System.out.print("Last Name: ");
+      student.setlastName(scanner.nextLine());
+     
+      System.out.print("Suffix: ");
+      student.setSuffix(scanner.nextLine());
+     
+      System.out.println("Full Name: " + student.getfirstName() + " " + student.getmiddleName() + " " + student.getlastName() + " " + student.getSuffix());
+   }
+}
