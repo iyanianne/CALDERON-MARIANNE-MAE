@@ -1,5 +1,5 @@
 /*JButton
-  JButton with Image on Button
+  JButton with Image on ActionList
 */
 
 import java.awt.event.*;
