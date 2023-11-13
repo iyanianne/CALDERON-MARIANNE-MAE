@@ -1,4 +1,7 @@
-//JButton with Image on Button
+/*JButton
+  JButton with Image on Button
+*/
+
 import java.awt.event.*;
 import javax.swing.*;
 
